@@ -1,129 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevBoard</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-orange-100 min-h-screen">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-orange-100 min-h-screen ">
     <!-- component -->
-    <div class="mt-5">
-      <div
-        class="fixed bg-white text-blue-800 px-10 py-1 z-10 w-full rounded-lg"
-      >
+<div class="mt-5 " >
+    <div class="fixed bg-white text-blue-800 px-10 py-1 z-10 w-full rounded-lg">
         <div class="flex items-center justify-between py-2 text-5x1">
-          <div class="flex items-center flex-auto">
-            <div class="w-7"><img src="/assets/logo.png" alt="" /></div>
-            <div class="font-bold text-blue-900 text-xl">
-              Dev<span class="text-orange-600">Board</span>
-            </div>
+          <div class=" flex items-center flex-auto ">
+            <div class=" w-7"><img src="/assets/logo.png" alt=""></div>
+            <div class="font-bold text-blue-900 text-xl">Dev<span class="text-orange-600">Board</span></div>
           </div>
           <div class="flex items-center text-gray-500">
-            <img src="/assets/checkbox.png" alt="" />
-            <h1 class="font-bold p-2" style="font-size: 30px">23</h1>
-            <div
-              class="bg-center bg-cover bg-no-repeat rounded-full inline-block h-9 w-9 ml-2"
-              style="background-image: url(/assets/theme-btn.png)"
-            ></div>
+            <img src="/assets/checkbox.png" alt="">
+            <h1 class=" font-bold p-2" style="font-size: 30px">23</h1>
+            <div class="bg-center bg-cover bg-no-repeat rounded-full inline-block h-9 w-9 ml-2" style="background-image: url(/assets/theme-btn.png)"></div>
           </div>
-        </div>
-      </div>
-
-      <div class="flex flex-row pt-24 px-10 pb-4">
-        <div class="w-10/12">
-          <div class="flex flex-row gap-4 h-24">
-            <div
-              class="flex items-center gap-2 bg-orange-200 border border-orange-300 rounded-xl w-2/6 ml-2 p-6"
-            >
-              <div><img src="/assets/checkbox.png" alt="" /></div>
-              <div>
-                <h3>Task Assigned</h3>
-                <h1 class="text-2xl font-bold">6</h1>
-              </div>
-            </div>
-            <div
-              class="flex items-center gap-2 bg-gradient-to-r from-red-200 to-red-300 border border-red-300 rounded-xl w-7/12 p-6"
-            >
-              <div><img class="w-12" src="/assets/board.png" alt="" /></div>
-              <div class="">Discover Something <br />New Today!</div>
-            </div>
-
-            <div
-              class="flex items-center gap-2 bg-no-repeat bg-orange-200 border border-orange-300 rounded-xl w-2/6 p-6"
-            >
-              <!-- current Date  -->
-              <div><img src="/assets/calender.png" alt="" /></div>
-              <div>
-                <span class="text-xl font-bold" id="current-date"></span>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-row h-64 mt-6">
-            <div class="bg-white rounded-xl shadow-lg px-6 py-4 w-4/12">a</div>
-            <div class="bg-white rounded-xl shadow-lg mx-6 px-6 py-4 w-4/12">
-              b
-            </div>
-            <div class="bg-white rounded-xl shadow-lg px-6 py-4 w-4/12">c</div>
-          </div>
-          <div class="flex flex-row h-64 mt-6">
-            <div class="bg-white rounded-xl shadow-lg px-6 py-4 w-4/12">a</div>
-            <div class="bg-white rounded-xl shadow-lg mx-6 px-6 py-4 w-4/12">
-              b
-            </div>
-            <div class="bg-white rounded-xl shadow-lg px-6 py-4 w-4/12">c</div>
-          </div>
-        </div>
-
-        <!-- left side  -->
-
-        <div class="w-2/12 ml-6">
-          <div class="bg-white rounded-xl shadow-lg mb-6 px-6 py-4">
-            <a
-              href=""
-              class="inline-block text-gray-600 hover:text-black my-4 w-full"
-            >
-              <span class="material-icons-outlined float-left pr-2"
-                >dashboard</span
-              >
-              Home
-              <span class="material-icons-outlined float-right"
-                >keyboard_arrow_right</span
-              >
-            </a>
-            <a
-              href=""
-              class="inline-block text-gray-600 hover:text-black my-4 w-full"
-            >
-              <span class="material-icons-outlined float-left pr-2">tune</span>
-              Some menu item
-              <span class="material-icons-outlined float-right"
-                >keyboard_arrow_right</span
-              >
-            </a>
-            <a
-              href=""
-              class="inline-block text-gray-600 hover:text-black my-4 w-full"
-            >
-              <span class="material-icons-outlined float-left pr-2"
-                >file_copy</span
-              >
-              Another menu item
-              <span class="material-icons-outlined float-right"
-                >keyboard_arrow_right</span
-              >
-            </a>
-          </div>
-        </div>
       </div>
     </div>
 
-    <script src="/script/date.js"></script>
-  </body>
+    <div class="flex flex-row pt-24 px-10 pb-4">
+      <div class="w-10/12">
+
+        <div class="flex flex-row gap-4 h-24">
+            <div class="flex items-center gap-2 bg-orange-200 border border-orange-300 rounded-xl w-2/6 ml-2 p-6">
+                <div><img src="/assets/checkbox.png" alt=""></div>
+                <div class="text-black">
+                    <h3>Task Assigned</h3>
+                    <h1 class="text-2xl font-bold">6</h1>
+                </div>
+              </div>
+          <div class=" flex items-center gap-2 bg-gradient-to-r from-red-200 to-red-300 border border-red-300 rounded-xl w-7/12 p-6">
+                <div><img class="w-12" src="/assets/board.png" alt=""></div>
+                <div class=" text-black">Discover Something <br>New Today!
+                </div>
+          </div>
+
+          <div class="flex items-center gap-2 bg-no-repeat bg-orange-200 border border-orange-300 rounded-xl w-2/6 p-6">
+            <!-- current Date  -->
+             <div><img src="/assets/calender.png" alt=""></div>
+             <div> <span class=" text-xl font-bold text-black" id="current-date"></span></div>
+
+
+          </div>
+        </div>
+        <div class="flex flex-row h-64 mt-6">
+          <div class="bg-white rounded-xl shadow-lg px-6 py-4 w-4/12">
+            <button class="btn btn-active btn-ghost">ShopEase</button>
+            <h1 class=" font-medium text-base text-black mt-2">Fix Mobile Button Issue </h1>
+            <div class=" bg-slate-100  font-thin mt-2 shadow-sm card p-2 ">Debug using Chrome DevTools, check for overlappin...</div>
+            <div class="mt-4 flex justify-between">
+                <div class="flex flex-col" >
+                    <h3>Deadline</h3>
+                    <h2 class="text-black">21 March 2025</h2>
+                </div>
+                <div>
+                    <button class="btn btn-primary text-white">Completed</button>
+                </div>
+              </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg mx-6 px-6 py-4 w-4/12">
+            <button class="btn btn-active btn-ghost">CloudSync</button>
+            <h1 class=" font-medium text-base text-black mt-2">Add Dark Mode </h1>
+            <div class=" bg-slate-100  font-thin mt-2 shadow-sm card p-2 ">Store the user's preference in localStorage......</div>
+            <div class="mt-4 flex justify-between">
+                <div class="flex flex-col" >
+                    <h3>Deadline</h3>
+                    <h2 class="text-black">21 March 2025</h2>
+                </div>
+                <div>
+                    <button class="btn btn-primary text-white">Completed</button>
+                </div>
+              </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg px-6 py-4 w-4/12">
+            <button class="btn btn-active btn-ghost">SwiftPay</button>
+            <h1 class=" font-medium text-base text-black mt-2">Optimize  Home page  </h1>
+            <div class=" bg-slate-100  font-thin mt-2 shadow-sm card p-2 ">Store the user's preference in localStorage......</div>
+            <div class="mt-4 flex justify-between">
+                <div class="flex flex-col" >
+                    <h3>Deadline</h3>
+                    <h2 class="text-black">21 March 2025</h2>
+                </div>
+                <div>
+                    <button class="btn btn-primary text-white">Completed</button>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="flex flex-row h-64 mt-6">
+            <div class="bg-white rounded-xl shadow-lg px-6 py-4 w-4/12">
+                <button class="btn btn-active btn-ghost">Meta</button>
+                <h1 class=" font-medium text-base text-black mt-2">Add new emoji 🤲</h1>
+                <div class=" bg-slate-100  font-thin mt-2 shadow-sm card p-2 ">Store the user's preference in localStorage......</div>
+                <div class="mt-4 flex justify-between">
+                    <div class="flex flex-col" >
+                        <h3>Deadline</h3>
+                        <h2 class="text-black">21 March 2025</h2>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary text-white">Completed</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg mx-6 px-6 py-4 w-4/12">
+                <button class="btn btn-active btn-ghost">Google LLC</button>
+                <h1 class=" font-medium text-base text-black mt-2">Integrate OpenAI API </h1>
+                <div class=" bg-slate-100  font-thin mt-2 shadow-sm card p-2 ">Store the user's preference in localStorage......</div>
+                <div class="mt-4 flex justify-between">
+                    <div class="flex flex-col" >
+                        <h3>Deadline</h3>
+                        <h2 class="text-black">21 March 2025</h2>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary text-white">Completed</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg px-6 py-4 w-4/12">
+                <button class="btn btn-active btn-ghost">GlassDoor</button>
+                <h1 class=" font-medium text-base text-black mt-2">Improve Job searching  </h1>
+                <div class=" bg-slate-100  font-thin mt-2 shadow-sm card p-2 ">Store the user's preference in localStorage......</div>
+                <div class="mt-4 flex justify-between">
+                    <div class="flex flex-col" >
+                        <h3>Deadline</h3>
+                        <h2 class="text-black">21 March 2025</h2>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary text-white">Completed</button>
+                    </div>
+                  </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- left side  -->
+
+      <div class="w-2/12 ml-6">
+        <div class="bg-white rounded-xl shadow-lg mb-6 px-6 py-4">
+          <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center">
+                <img src="/assets/activity.png" alt="">
+                <h3>activity log</h3>
+            </div>
+            <button class="btn btn-primary text-white mt-4">Clear History</button>
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="/script/date.js"></script>
+</body>
 </html>
