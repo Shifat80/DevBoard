@@ -11,7 +11,7 @@ for (let i = 0; i < completeButtons.length; i++) {
         const newText = document.createElement("p");
 
         const currentTime = new Date().toLocaleTimeString();
-        newText.textContent = "Task " + h1text + " is completed at " + currentTime;
+        newText.textContent = "Task: " + h1text + " is completed at " + currentTime;
 
         newText.className = "text-sm font-semibold text-gray-900 my-1";
         leftCard.querySelector(".history").appendChild(newText);
