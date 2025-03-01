@@ -1,6 +1,6 @@
 const completeButtons = document.querySelectorAll(".btn-primary");
 for (let i = 0; i < completeButtons.length; i++) {
-    completeButtons[i].addEventListener("click", function() {
+    completeButtons[i].addEventListener("click", function () {
         const cardContainer = completeButtons[i].closest('.bg-white');
         const h1text = cardContainer.querySelector("h1").textContent;
         // console.log("Task completed:", h1text);
@@ -18,15 +18,25 @@ for (let i = 0; i < completeButtons.length; i++) {
 
 
         // assigned task
-        const currentTask=document.getElementById("task-assigned");
-        const convertedTask=parseInt(currentTask.innerText);
+        const currentTask = document.getElementById("task-assigned");
+        const convertedTask = parseInt(currentTask.innerText);
         // console.log(convertedTask);
         currentTask.innerText = convertedTask - 1;
 
-        const completedTask=document.getElementById("completed-task");
-        const convertedCompletedTask=parseInt(completedTask.innerText);
+        const completedTask = document.getElementById("completed-task");
+        const convertedCompletedTask = parseInt(completedTask.innerText);
         // console.log(convertedTask);
         completedTask.innerText = convertedCompletedTask + 1;
 
     });
 }
+
+const clrBtn = document.getElementById("clear-btn");
+clrBtn.addEventListener("click", function () {
+    const historyContainer = document.querySelector(".history");
+    const paragraphs = historyContainer.querySelectorAll("p.text-sm.font-semibold.text-gray-900.my-1");
+
+    paragraphs.forEach(paragraph => {
+        historyContainer.removeChild(paragraph);
+    });
+});
