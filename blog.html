@@ -1,11 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevVlog</title>
-</head>
-<body>
-    
-</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body class="bg-orange-100 min-h-screen">
+    <div class="py-4">
+      <div class="container max-w-7xl w-full mx-auto px-4 sm:px-8 py-4">
+        <div class="bg-white text-blue-800 w-full rounded-lg py-2 px-8">
+          <div class="flex items-center justify-between py-1 text-5x1">
+            <div class="flex items-center flex-auto">
+              <div class="w-7"><img src="assets/logo.png" alt="" /></div>
+              <div class="font-bold text-blue-900 text-xl">
+                Dev<span class="text-orange-600">Board</span>
+              </div>
+            </div>
+            <div>
+              <button class="btn btn-primary text-white">
+                Back to Dashboard
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="grid grid-cols-1 xl:grid-cols-1 gap-4 mx-auto px-4 sm:px-8 py-4 max-w-7xl pb-8"
+    >
+      <div class="w-full p-4 bg-white rounded-xl">
+        <p class="font-medium text-black">
+          What are the different ways to select an element in the DOM?
+        </p>
+        <hr class="my-2 border-gray-300 w-full" />
+        <p class="font-light">
+          There are many way we can select element in DOM.Like- using
+          queorySelector and getElementById etc
+        </p>
+      </div>
+      <div class="w-full p-4 bg-white rounded-xl">
+        <p class="font-medium text-black">
+          What is the difference between innerHTML, innerText, and textContent ?
+        </p>
+
+        <hr class="my-2 border-gray-300 w-full" />
+
+        <p class="font-light">
+          innerHTML gets the HTML content inside an element, while innerText
+          retrieves only the visible text as displayed on the page, ignoring
+          hidden elements. textContent extracts all text, including hidden
+          elements.
+        </p>
+      </div>
+      <div class="w-full p-4 bg-white rounded-xl">
+        <p class="font-medium text-black">
+          What is event delegation in the DOM?
+        </p>
+
+        <hr class="my-2 border-gray-300 w-full" />
+
+        <p class="font-light">
+          it's a method where we can add eventListener to der parent div and
+          apply event on its child.
+        </p>
+      </div>
+      <div class="w-full p-4 bg-white rounded-xl">
+        <p class="font-medium text-black">What is event bubbling in the DOM?</p>
+
+        <hr class="my-2 border-gray-300 w-full" />
+
+        <p class="font-light">
+          if an event heppend on a child it can happend on its parent or
+          grandparents too.
+        </p>
+      </div>
+      <div class="w-full p-4 bg-white rounded-xl">
+        <p class="font-medium text-black">
+          How do you create, add, and remove elements using JavaScript?
+        </p>
+
+        <hr class="my-2 border-gray-300 w-full" />
+
+        <p class="font-light">
+          we use the Document Object Model (DOM) to create, add, and remove
+          elements dynamically.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
