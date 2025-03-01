@@ -22,11 +22,17 @@ for (let i = 0; i < completeButtons.length; i++) {
         const convertedTask = parseInt(currentTask.innerText);
         // console.log(convertedTask);
         currentTask.innerText = convertedTask - 1;
+        if(convertedTask===1){
+            alert("Congrets!! you have completed all your current task.")
+        }
 
         const completedTask = document.getElementById("completed-task");
         const convertedCompletedTask = parseInt(completedTask.innerText);
         // console.log(convertedTask);
         completedTask.innerText = convertedCompletedTask + 1;
+
+
+        alert("board Updated successfully");
 
     });
 }
