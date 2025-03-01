@@ -14,7 +14,7 @@ for (let i = 0; i < completeButtons.length; i++) {
         newText.textContent = "Task " + h1text + " is completed at " + currentTime;
 
         newText.className = "text-sm font-semibold text-gray-900 my-1";
-        leftCard.querySelector(".flex.flex-col.items-center").appendChild(newText);
+        leftCard.querySelector(".history").appendChild(newText);
 
 
         // assigned task
@@ -23,7 +23,10 @@ for (let i = 0; i < completeButtons.length; i++) {
         // console.log(convertedTask);
         currentTask.innerText = convertedTask - 1;
 
-        
+        const completedTask=document.getElementById("completed-task");
+        const convertedCompletedTask=parseInt(completedTask.innerText);
+        // console.log(convertedTask);
+        completedTask.innerText = convertedCompletedTask + 1;
 
     });
 }
