@@ -13,11 +13,11 @@
   </head>
   <body class="bg-orange-100 min-h-screen">
     <!-- component -->
-    <div class="py-4 ">
+    <div class="py-4">
       <div
-        class="bg-white text-blue-800 mx-auto px-10 py-1  rounded-lg"
+        class="bg-white text-blue-800 max-w-7xl w-full mx-auto py-2 px-8 rounded-lg"
       >
-        <div class="flex items-center justify-between py-2 text-5x1">
+        <div class="flex items-center justify-between py-1 text-5x1">
           <div class="flex items-center flex-auto">
             <div class="w-7"><img src="assets/logo.png" alt="" /></div>
             <div class="font-bold text-blue-900 text-xl">
@@ -26,7 +26,13 @@
           </div>
           <div class="flex items-center text-gray-500">
             <img src="assets/checkbox.png" alt="" />
-            <h1 id="completed-task" class="font-bold p-2" style="font-size: 30px">24</h1>
+            <h1
+              id="completed-task"
+              class="font-bold p-2"
+              style="font-size: 30px"
+            >
+              24
+            </h1>
             <div
               id="theme-btn"
               class="bg-center bg-cover bg-no-repeat rounded-full inline-block h-9 w-9 ml-2"
@@ -38,13 +44,13 @@
 
       <div class="flex flex-row pt-4 px-8 pb-4">
         <div class="w-10/12">
-          <div class="flex flex-row justify-evenly gap-2 h-24">
+          <div class="flex flex-row justify-between gap-2 h-24">
             <div
               class="flex items-center gap-2 bg-orange-200 border border-orange-300 rounded-xl w-2/6 ml-2 p-6"
             >
               <div><img src="assets/checkbox.png" alt="" /></div>
               <div class="text-black">
-                <h3 class=" font-medium">Task Assigned</h3>
+                <h3 class="font-medium">Task Assigned</h3>
                 <h1 id="task-assigned" class="text-2xl font-bold">6</h1>
               </div>
             </div>
@@ -52,7 +58,9 @@
               class="flex items-center gap-2 bg-gradient-to-r from-red-200 to-red-300 border border-red-300 rounded-xl w-7/12 p-6"
             >
               <div><img class="w-12" src="assets/board.png" alt="" /></div>
-              <div class="text-black font-medium">Discover Something <br />New Today!</div>
+              <div class="text-black font-medium">
+                Discover Something <br />New Today!
+              </div>
             </div>
 
             <div
@@ -62,7 +70,7 @@
               <div><img src="assets/calender.png" alt="" /></div>
               <div>
                 <span
-                  class=" text-lg font-bold text-black"
+                  class="text-lg font-bold text-black"
                   id="current-date"
                 ></span>
               </div>
@@ -185,7 +193,10 @@
         <!-- left side  -->
 
         <div class="w-2/12 ml-6">
-          <div id="left-card" class="bg-white rounded-xl shadow-lg mb-6 px-6 py-4">
+          <div
+            id="left-card"
+            class="bg-white rounded-xl shadow-lg mb-6 px-6 py-4"
+          >
             <div class="history flex flex-col items-center">
               <div class="flex flex-col items-center">
                 <img src="assets/activity.png" alt="" />
