@@ -36,13 +36,11 @@ for (let i = 0; i < completeButtons.length; i++) {
 
     });
 }
-
-const clrBtn = document.getElementById("clear-btn");
-clrBtn.addEventListener("click", function () {
+ document.getElementById("clear-btn").addEventListener("click", function () {
     const historyContainer = document.querySelector(".history");
     const paragraphs = historyContainer.querySelectorAll("p.text-sm.font-semibold.text-gray-900.my-1");
 
-    paragraphs.forEach(paragraph => {
-        historyContainer.removeChild(paragraph);
-    });
+    for (let i = paragraphs.length - 1; i >= 0; i--) {
+        historyContainer.removeChild(paragraphs[i]);
+    }
 });
