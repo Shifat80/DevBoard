@@ -22,6 +22,7 @@ for (let i = 0; i < completeButtons.length; i++) {
         const convertedTask = parseInt(currentTask.innerText);
         // console.log(convertedTask);
         currentTask.innerText = convertedTask - 1;
+        alert("board Updated successfully");
         if(convertedTask===1){
             alert("Congrets!! you have completed all your current task.")
         }
@@ -32,7 +33,6 @@ for (let i = 0; i < completeButtons.length; i++) {
         completedTask.innerText = convertedCompletedTask + 1;
 
 
-        alert("board Updated successfully");
 
     });
 }
